@@ -56,6 +56,11 @@ h2:hover {
   color: #33ccff;
 }
 
+a {
+  color: white;
+  text-decoration: underline;
+}
+
 select {
   display: block;
   width: 100%;
