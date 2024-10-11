@@ -14,27 +14,36 @@
       <div class="header-image">
         <img src="world.jpg" alt="World Clock" />
       </div>
-      <select>
+
+      <select id="city">
         <option value="">Select a city...</option>
-        <option value="london">London🏴󠁧󠁢󠁥󠁮󠁧󠁿</option>
-        <option value="new-york">New York🇺🇸</option>
-        <option value="berlin">Berlin🇩🇪</option>
+        <option value="Europe/London">London🏴󠁧󠁢󠁥󠁮󠁧󠁿</option>
+        <option value="Europe/Paris">Paris🇫🇷</option>
+        <option value="America/Costa_Rica">Costa Rica🇨🇷</option>
       </select>
 
-      <div class="city" id="london">
-        <div>
-          <h2>London 🏴󠁧󠁢󠁥󠁮󠁧󠁿</h2>
-          <div class="date"></div>
+      <div id="cities">
+        <div class="city" id="london">
+          <div>
+            <h2>London 🏴󠁧󠁢󠁥󠁮󠁧󠁿</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time"></div>
-      </div>
-
-      <div class="city" id="newYork">
-        <div>
-          <h2>New York 🇺🇸</h2>
-          <div class="date"></div>
+        <div class="city" id="paris">
+          <div>
+            <h2>Paris 🇫🇷</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time"></div>
+        <div class="city" id="costaRica">
+          <div>
+            <h2>Costa Rica 🇨🇷</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
       </div>
     </div>
 
