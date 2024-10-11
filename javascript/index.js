@@ -1,5 +1,4 @@
 function updateTime() {
-  // London
   let londonElement = document.querySelector("#london");
   if (londonElement) {
     let londonDateElement = londonElement.querySelector(".date");
@@ -11,8 +10,6 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
-
-  // Paris
   let parisElement = document.querySelector("#paris");
   if (parisElement) {
     let parisDateElement = parisElement.querySelector(".date");
@@ -24,8 +21,6 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
-
-  // Costa Rica
   let costaRicaElement = document.querySelector("#costaRica");
   if (costaRicaElement) {
     let costaRicaDateElement = costaRicaElement.querySelector(".date");
@@ -61,11 +56,9 @@ function updateCity(event) {
     `;
 }
 
-// Initial time update
 updateTime();
-// Update time every second
+
 setInterval(updateTime, 1000);
 
-// Event listener for city selection
 let citiesSelectElement = document.querySelector("#city");
 citiesSelectElement.addEventListener("change", updateCity);
